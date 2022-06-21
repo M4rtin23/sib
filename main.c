@@ -30,6 +30,8 @@ int main(){
 		strcat(result,  "https://github.com/search?q=");
 	}else if(!strcmp(command[0],"yt")){
 		strcat(result, "https://www.youtube.com/results?search_query=");
+	}else if(!strcmp(command[0],"")){
+		strcpy(result, "");
 	}else{
 		strcat(result, "https://lite.duckduckgo.com/lite/?q=");		
 		plus = 0;
