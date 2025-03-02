@@ -14,18 +14,18 @@ int main(){
 	}
 	if(!strcmp(command[0],"ddg")){
 		strcat(result, "https://html.duckduckgo.com/html/?q=");
-	}else if(!strcmp(command[0],"w")){
-		strcat(result, "https://es.wikipedia.org/wiki/");
 	}else if(!strcmp(command[0],"wiki")){
+		strcat(result, "https://es.wikipedia.org/wiki/");
+	}else if(!strcmp(command[0],"w")){
 		strcat(result, "https://en.wikipedia.org/wiki/");
-	}else if(!strcmp(command[0],"d")){
-		strcat(result, "https://www.thefreedictionary.com/");
+	}else if(!strcmp(command[0],"dic")){
+		strcat(result, "https://dictionary.cambridge.org/dictionary/english/");
 	}else if(!strcmp(command[0],"rae")){
 		strcat(result, "https://dle.rae.es/");
-	}else if(!strcmp(command[0],"gt")){
-		strcat(result, "https://translate.google.com/?sl=auto&tl=auto&text=");
-	}else if(!strcmp(command[0],"t")){
-		strcat(result, "https://libretranslate.com/?source=en&target=es&q=");
+	}else if(!strcmp(command[0],"to-en")){
+		strcat(result, "https://www.deepl.com/en/translator#es/en-us/");
+	}else if(!strcmp(command[0],"to-es")){
+		strcat(result, "https://www.deepl.com/en/translator#en/es/");
 	}else if(!strcmp(command[0],"gh")){
 		strcat(result,  "https://github.com/search?q=");
 	}else if(!strcmp(command[0],"yt")){
@@ -33,7 +33,7 @@ int main(){
 	}else if(!strcmp(command[0],"")){
 		strcpy(result, "");
 	}else{
-		strcat(result, "https://lite.duckduckgo.com/lite/?q=");		
+		strcat(result, "https://duckduckgo.com/?q=");		
 		plus = 0;
 	}
 	for(int i = 0; i < 16-plus; i++){
