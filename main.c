@@ -4,7 +4,7 @@
 
 int main(){
 	char command[16][16];
-	char result[256] = "firefox \"";
+	char result[256] = "xdg-open \"";
 	int plus = 1;
 	for(int i = 0; i < 16; i++){
 		command[i][0] = 0;
