@@ -15,9 +15,9 @@ int main(){
 	if(!strcmp(command[0],"ddg")){
 		strcat(result, "https://html.duckduckgo.com/html/?q=");
 	}else if(!strcmp(command[0],"wiki")){
-		strcat(result, "https://es.wikipedia.org/wiki/");
+		strcat(result, "https://es.wikipedia.org/w/index.php?search=");
 	}else if(!strcmp(command[0],"w")){
-		strcat(result, "https://en.wikipedia.org/wiki/");
+		strcat(result, "https://en.wikipedia.org/w/index.php?search=");
 	}else if(!strcmp(command[0],"dic")){
 		strcat(result, "https://dictionary.cambridge.org/dictionary/english/");
 	}else if(!strcmp(command[0],"rae")){
